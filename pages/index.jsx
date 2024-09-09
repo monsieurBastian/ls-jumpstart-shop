@@ -9,7 +9,6 @@ export default function Home(props) {
 
   console.log(page); // you can view this object in the console
 
-
   return (
     <>
       {/* {JSON.stringify(page)} */}
@@ -34,7 +33,7 @@ export default function Home(props) {
                 return <>{contentType}</>;
               }
 
-              return "";
+              return <></>;
             })
           : ""}
       </div>

@@ -5,9 +5,11 @@ const ProductSection = (props) => {
   const fields = _.get(props, "fields");
   const title = _.get(fields, "title");
   const products = _.get(fields, "products");
+  const backgroundColor = _.get(fields, "backgroundColor");
+  const textColor = _.get(fields, "textColor");
 
   if (!fields) {
-    return "";
+    return <></>;
   }
   return (
     <div className="">
@@ -26,6 +28,7 @@ const ProductSection = (props) => {
                   key={productId}
                   id={productId}
                   fields={fields}
+                  colors={{ backgroundColor, textColor }}
                 />
               );
             })

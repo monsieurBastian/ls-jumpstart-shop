@@ -10,7 +10,11 @@ const ProductCardComponent = (props) => {
   const id = _.get(props, "id");
   const productIndex = _.get(props, "productIndex");
   const fields = _.get(props, "fields");
+  const image = _.get(fields, "image");
+  const firstImage = _.get(fields, "gallery[0].fields.image");
 
+  const backgroundColor = _.get(props, "colors.backgroundColor");
+  const textColor = _.get(props, "colors.textColor");
   const [indexIsOdd, setIndexIsOdd] = useState(false);
 
   useEffect(() => {
@@ -20,8 +24,6 @@ const ProductCardComponent = (props) => {
     return () => {};
   }, []);
 
-  console.log("description field", fields.description);
-
   if (!fields) {
     return "";
   }
@@ -29,13 +31,25 @@ const ProductCardComponent = (props) => {
     <div className="">
       <div className="flex flex-col space-y-10x lg:space-y-0x lg:space-x-10x lg:flex-row w-full p-6x lg:py-10x lg:px-40x overflow-hidden rounded-md shadow-lg">
         <div
-          className={`w-1/2 bg-blau9x bg-blau3 p-10 ${
-            indexIsOdd ? "order-last" : ""
-          }`}
+          style={{
+            backgroundColor: backgroundColor ? backgroundColor : null,
+            color: textColor ? textColor : null,
+          }}
+          className={`w-1/2 bg-blau  p-10  ${indexIsOdd ? "order-last" : ""}  `}
         >
-          <ImageComponent image={fields.image} />
+          {firstImage ? (
+            <ImageComponent image={firstImage} />
+          ) : (
+            <ImageComponent image={image} />
+          )}
         </div>
-        <div className="w-1/2  bg-gelb p-10 flex flex-col items-center">
+        <div
+          style={{
+            backgroundColor: backgroundColor ? backgroundColor : null,
+            color: textColor ? textColor : null,
+          }}
+          className={`w-1/2 bg-gelb  p-10 flex flex-col items-center `}
+        >
           <div className=" h-1/3"></div>
           <div className="flex flex-col space-y-4">
             <h2 className="text-xl font-bold ">{fields.title}</h2>
@@ -58,7 +72,6 @@ const ProductCardComponent = (props) => {
           <div className=" h-1/3"></div>
         </div>
       </div>
-      {/* {JSON.stringify(fields)} */}
     </div>
   );
 };
