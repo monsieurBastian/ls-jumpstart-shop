@@ -1,0 +1,113 @@
+VersionMismatch: {
+  "status": 409,
+  "statusText": "Conflict",
+  "message": "",
+  "details": {},
+  "request": {
+    "url": "https://api.contentful.com/spaces/jvjcuv08qo93/environments/feature-1/entries/amelias-core-concept-hoodie",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.management.v1+json",
+      "X-Contentful-User-Agent": "app contentful.cli/3.3.8; feature space-migration; sdk contentful-management-plain.js/11.33.0; platform node.js/v21.6.1; os macOS/v21.6.1;",
+      "CF-Sequence": "e36fa70c-63da-4901-a04e-d203942fb46a",
+      "Authorization": "Bearer ...rrBYw",
+      "X-Contentful-Version": "0",
+      "X-Contentful-Content-Type": "mediaWrapper",
+      "User-Agent": "axios/1.7.5",
+      "Content-Length": "151",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "put",
+    "payloadData": "{\"sys\":{\"id\":\"amelias-core-concept-hoodie\",\"version\":0,\"contentType\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"ContentType\",\"id\":\"mediaWrapper\"}}},\"fields\":{}}"
+  },
+  "requestId": "1fd5f6e6-3835-4e54-9575-db01572ab204"
+}
+    at errorHandler (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-management/dist/contentful-management.node.js:18111:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async RestAdapter.makeRequest (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-management/dist/contentful-management.node.js:4345:12)
+    at async Task.task (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-migration/built/bin/cli.js:189:29)
+    at async Task.run (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/listr2/dist/lib/task.js:213:21)
+    at async /Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/listr2/node_modules/p-map/index.js:57:22VersionMismatch: {
+  "status": 409,
+  "statusText": "Conflict",
+  "message": "",
+  "details": {},
+  "request": {
+    "url": "https://api.contentful.com/spaces/jvjcuv08qo93/environments/feature-1/entries/amelias-core-concept-hoodie/published",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.management.v1+json",
+      "X-Contentful-User-Agent": "app contentful.cli/3.3.8; feature space-migration; sdk contentful-management-plain.js/11.33.0; platform node.js/v21.6.1; os macOS/v21.6.1;",
+      "CF-Sequence": "e36fa70c-63da-4901-a04e-d203942fb46a",
+      "Authorization": "Bearer ...rrBYw",
+      "X-Contentful-Version": "1",
+      "X-Contentful-Content-Type": "mediaWrapper",
+      "User-Agent": "axios/1.7.5",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "put"
+  },
+  "requestId": "e95f5103-ca3a-437c-b5a8-9077e95b06bc"
+}
+    at errorHandler (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-management/dist/contentful-management.node.js:18111:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async RestAdapter.makeRequest (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-management/dist/contentful-management.node.js:4345:12)
+    at async Task.task (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-migration/built/bin/cli.js:189:29)
+    at async Task.run (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/listr2/dist/lib/task.js:213:21)
+    at async /Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/listr2/node_modules/p-map/index.js:57:22VersionMismatch: {
+  "status": 409,
+  "statusText": "Conflict",
+  "message": "",
+  "details": {},
+  "request": {
+    "url": "https://api.contentful.com/spaces/jvjcuv08qo93/environments/feature-1/entries/jims-legendary-coffee-mug",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.management.v1+json",
+      "X-Contentful-User-Agent": "app contentful.cli/3.3.8; feature space-migration; sdk contentful-management-plain.js/11.33.0; platform node.js/v21.6.1; os macOS/v21.6.1;",
+      "CF-Sequence": "e36fa70c-63da-4901-a04e-d203942fb46a",
+      "Authorization": "Bearer ...rrBYw",
+      "X-Contentful-Version": "0",
+      "X-Contentful-Content-Type": "mediaWrapper",
+      "User-Agent": "axios/1.7.5",
+      "Content-Length": "149",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "put",
+    "payloadData": "{\"sys\":{\"id\":\"jims-legendary-coffee-mug\",\"version\":0,\"contentType\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"ContentType\",\"id\":\"mediaWrapper\"}}},\"fields\":{}}"
+  },
+  "requestId": "9a3ee296-681c-448f-b664-2c46a77b44c4"
+}
+    at errorHandler (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-management/dist/contentful-management.node.js:18111:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async RestAdapter.makeRequest (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-management/dist/contentful-management.node.js:4345:12)
+    at async Task.task (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-migration/built/bin/cli.js:189:29)
+    at async Task.run (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/listr2/dist/lib/task.js:213:21)
+    at async /Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/listr2/node_modules/p-map/index.js:57:22VersionMismatch: {
+  "status": 409,
+  "statusText": "Conflict",
+  "message": "",
+  "details": {},
+  "request": {
+    "url": "https://api.contentful.com/spaces/jvjcuv08qo93/environments/feature-1/entries/jims-legendary-coffee-mug/published",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.management.v1+json",
+      "X-Contentful-User-Agent": "app contentful.cli/3.3.8; feature space-migration; sdk contentful-management-plain.js/11.33.0; platform node.js/v21.6.1; os macOS/v21.6.1;",
+      "CF-Sequence": "e36fa70c-63da-4901-a04e-d203942fb46a",
+      "Authorization": "Bearer ...rrBYw",
+      "X-Contentful-Version": "1",
+      "X-Contentful-Content-Type": "mediaWrapper",
+      "User-Agent": "axios/1.7.5",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "put"
+  },
+  "requestId": "697ef36e-7cfc-4213-8f5f-026fd553bc93"
+}
+    at errorHandler (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-management/dist/contentful-management.node.js:18111:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async RestAdapter.makeRequest (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-management/dist/contentful-management.node.js:4345:12)
+    at async Task.task (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/contentful-migration/built/bin/cli.js:189:29)
+    at async Task.run (/Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/listr2/dist/lib/task.js:213:21)
+    at async /Users/Bastian.Gurtner/.nvm/versions/node/v21.6.1/lib/node_modules/contentful-cli/node_modules/listr2/node_modules/p-map/index.js:57:22
